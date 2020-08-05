@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>z플립판매!</title>
+    <link rel="stylesheet" href="homeworkstyle.css">
+    <style>
+        .z-flip1 {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSgQS5UPE7B8dNGJFJnjuPH02qYU8mMnlwj1A&usqp=CAU');
+            width: 350px;
+            height: 150px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        .z-flip2 {
+            color: navy;
+            font-size: 20px;
+            font-family: Gaegu;
+            background-color: yellow;
+            background-position: center;
+            width: 350px;
+            height: 350px;
+            margin: auto;
+            text-align: center;
+            border-radius: 10px;
+            padding-top: 50px;
+
+        }
+
+    </style>
+    <script>
+        function clickbutton() {
+            alert('주문이 완료되었습니다.');
+        }
+    </script>
+</head>
+
+<body>
+<div class="z-flip1">
+    <div style="font-size:3em; color:white; font-family:Gaegu;">
+        Z플립
+    </div>
+    <div style="font-size:2em; color:lightgoldenrodyellow; font-weight:bold; font-style:italic; font-family: 'Nanum Pen Script', cursive;">
+        1,000,000
+    </div>
+</div>
+
+<br/>
+
+<div class="z-flip2">
+    <form class="form-inline">
+        <div class="form-group">
+            <label for="exampleInputName2">주문자명</label>
+            <input type="text" class="form-control" id="exampleInputName2" placeholder="Cecilia An">
+        </div>
+        <br/>
+        <div class="form-group">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail2">주소</label>
+            <input type="address" class="form-control" id="exampleInputEmail2"
+                   placeholder="123street Gangnam-gu Seoul, Korea">
+        </div>
+        <br/><br/>
+        <div class="form-group">
+            <label for="exampleInputEmail3">전화번호</label>
+            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="010-1234-5678">
+        </div>
+        <br/><br/>
+        <form>
+            <input type=text name=amount value=1>
+            <input type=button value="+" onClick="javascript:this.form.amount.value++;">
+            <input type=button value="-" onClick="javascript:this.form.amount.value--;">
+</form>
+        <br/>
+        <button onclick="clickbutton()" type="button" class="btn btn-primary">Primary</button>
+    </form>
+</div>
+
+</body>
+</html>
